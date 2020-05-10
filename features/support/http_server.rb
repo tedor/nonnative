@@ -6,7 +6,6 @@ module Nonnative
       def configure(http)
         http.register(Hello)
         http.register(Health)
-        http.register(Metrics)
       end
     end
   end

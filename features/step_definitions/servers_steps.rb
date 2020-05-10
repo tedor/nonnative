@@ -81,6 +81,7 @@ end
 
 Then('I should receive a successful metrics response') do
   expect(@response.code).to eq(200)
+  expect(@response.body).to include('http')
 end
 
 Then('I should receive a http not found response') do

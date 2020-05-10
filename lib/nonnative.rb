@@ -8,6 +8,8 @@ require 'yaml'
 require 'grpc'
 require 'sinatra'
 require 'rest-client'
+require 'prometheus/middleware/collector'
+require 'prometheus/middleware/exporter'
 
 require 'nonnative/version'
 require 'nonnative/error'

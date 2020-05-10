@@ -26,6 +26,9 @@ module Nonnative
       set :server, :puma
       set :logging, false
       set :quiet, true
+
+      use Prometheus::Middleware::Collector
+      use Prometheus::Middleware::Exporter
     end
   end
 end
